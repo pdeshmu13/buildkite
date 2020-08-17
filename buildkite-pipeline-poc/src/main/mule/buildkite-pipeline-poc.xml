@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="8aca3152-c8c4-482e-9fd7-22e197992d50" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="buildkite-pipeline-pocFlow" doc:id="090fd9e1-6f24-42d1-9b2f-085ec3f962c3" >
+		<http:listener doc:name="Listener" doc:id="f7080a5e-b7b2-4624-bd34-0a5d5150fd49" config-ref="HTTP_Listener_config" path="/buildkite"/>
+		<set-payload value='#["Buildkite POC"]' doc:name="Set Payload" doc:id="7cb965e9-12cb-4b9b-aa35-7752b6be7e39" />
+		<logger level="INFO" doc:name="LOG Payload" doc:id="2211d527-43b6-40a5-9800-53a907ddbe85" message="#[payload]"/>
+	</flow>
+</mule>
