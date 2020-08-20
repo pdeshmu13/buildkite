@@ -16,6 +16,7 @@
 
 		<app.runtime>4.3.0</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+	    	<mule.version>4.3.0</mule.version>
 	</properties>
 
 	<build>
@@ -31,7 +32,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
+				<cloudHubDeployment>
                 		<uri>${MULE_URI}</uri>
                 		<businessGroup>${MULE_BUSS_GRP}</businessGroup>
                 		<objectStoreV2>${MULE_OBJ_STR2}</objectStoreV2>
@@ -41,7 +42,7 @@
                 		<workers>${MULE_WORKER}</workers>
                 		<workerType>${MULE_WORKER_TYP}</workerType>
                 		<applicationName>${MULE_APP_NAME}</applicationName>
-                		<muleVersion>4.3.0</muleVersion>
+                		<muleVersion>${mule.version}</muleVersion>
                 </cloudHubDeployment>
 				</configuration>
 			</plugin>
