@@ -43,9 +43,6 @@
                 		<workerType>${MULE_WORKER_TYP}</workerType>
                 		<applicationName>${MULE_APP_NAME}</applicationName>
                 		<muleVersion>${mule.version}</muleVersion>
-				<properties>
-          			<key>value</key>
-          			</properties>
                 </cloudHubDeployment>
 				</configuration>
 			</plugin>
