@@ -39,8 +39,9 @@
                 				<username>pdeshmu11</username>
                 				<password>Aug@2020</password>
                 				<environment>Sandbox</environment>
-                				<workers>${MULE_WORKER}</workers>
-                				<workerType>${MULE_WORKER_TYP}</workerType>
+						<region>eu-west-2</region>
+            					<workerType>Micro</workerType>
+						<workers>1</workers>
                 				<applicationName>buildkite-poc</applicationName>
                 				<muleVersion>${mule.version}</muleVersion>
                 			</cloudHubDeployment>
