@@ -42,7 +42,7 @@
 						<workers>${MULE_WORKER}</workers>
 						<workerType>${MULE_WORKER_TYP}</workerType>
 						<applicationName>${MULE_APP_NAME}</applicationName>
-						<muleVersion>${MULE_VERSION}</muleVersion>
+						<muleVersion>4.3.0</muleVersion>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
