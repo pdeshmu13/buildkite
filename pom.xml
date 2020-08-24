@@ -36,12 +36,12 @@
                 				<uri>${MULE_URI}</uri>
                 				<businessGroup>${MULE_BUSS_GRP}</businessGroup>
                 				<objectStoreV2>${MULE_OBJ_STR2}</objectStoreV2>
-                				<username>${MULE_USERNAME}</username>
-                				<password>${MULE_PASSWORD}</password>
-                				<environment>${MULE_ENV}</environment>
+                				<username>pdeshmu11</username>
+                				<password>Aug@2020</password>
+                				<environment>Sandbox</environment>
                 				<workers>${MULE_WORKER}</workers>
                 				<workerType>${MULE_WORKER_TYP}</workerType>
-                				<applicationName>${MULE_APP_NAME}</applicationName>
+                				<applicationName>buildkite-poc</applicationName>
                 				<muleVersion>${mule.version}</muleVersion>
                 			</cloudHubDeployment>
 				</configuration>
