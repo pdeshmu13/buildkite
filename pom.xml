@@ -51,7 +51,7 @@
 	<distributionManagement>
        	 <repository>
             <id>288170667</id>
-            <url> https://api.github.com/repos/pdeshmu13/buildkite</url>        
+            <url>https://api.github.com/repos/pdeshmu13/buildkite</url>        
          </repository>    	
 	</distributionManagement>
 
