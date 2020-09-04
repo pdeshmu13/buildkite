@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/netsuite http://www.mulesoft.org/schema/mule
 	</http:listener-config>
 	<flow name="buildkite-pipeline-pocFlow" doc:id="7191dcf6-9a7b-47a0-a18e-303a8cf3c085" >
 		<http:listener doc:name="Listener" doc:id="c77536c6-feb4-455a-92d2-d1d0cddaeffa" config-ref="HTTP_Listener_config" path="/buildkite"/>
-		<set-payload value='#["Buildkite"]' doc:name="Set Payload" doc:id="fec646fe-f0e1-4fcd-b694-4c2ac6c7c4f2" />
+		<set-payload value='#["Buildkite POC"]' doc:name="Set Payload" doc:id="fec646fe-f0e1-4fcd-b694-4c2ac6c7c4f2" />
 		<logger level="INFO" doc:name="LOG Payload" doc:id="1637d0bf-9108-4f30-9350-c25335eaf50f" message="#[payload]"/>
 	</flow>
 </mule>
